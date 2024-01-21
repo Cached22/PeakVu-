@@ -1,0 +1,115 @@
+/* Main styles for PeakVu Roofing App */
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Universal box-sizing rule */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Body and root font styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container for all app components */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #218838;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+  }
+
+  .app-container {
+    padding: 10px;
+  }
+}
