@@ -1,0 +1,38 @@
+# dependencies
+/node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ignore all HTML files in the root except the index.html
+/*.html
+!public/index.html
+
+# ignore all JS and CSS files in the root
+/*.js
+/*.css
+
+# ignore specific files in the build directory
+/build/static/js/*.map
+/build/static/css/*.map
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
